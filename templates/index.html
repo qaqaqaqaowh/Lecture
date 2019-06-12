@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+	{% for todo in todos %}
+		<p>{{todo.task}}</p>
+	{% endfor %}
+	<a href="{{ url_for('new') }}">Make new</a>
+</body>
+</html>
